@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moment Cafe - Železný Brod</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#domov"><img src="attached_assets/logo_moment_1755123950179.png" alt="MOMENT Cafe" class="logo-img"></a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#domov" class="nav-link">Domov</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu" class="nav-link">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#o-nas" class="nav-link">O nás</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#galerie" class="nav-link">Galerie</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#kontakt" class="nav-link">Kontakt</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="domov" class="hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+
+                <p class="hero-subtitle">Místo, kde se čas zastavuje a chuť začíná</p>
+                <p class="hero-description">Objevte útulnou atmosféru naší kavárny v srdci Železného Brodu. Každý šálek kávy je pro nás momentem dokonalosti.</p>
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn btn-primary">Prohlédnout Menu</a>
+                    <a href="#kontakt" class="btn btn-secondary">Kontaktovat nás</a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Naše Menu</h2>
+                <p class="section-subtitle">Vybíráme jen ty nejlepší ingredience pro váš požitek</p>
+            </div>
+            <div class="menu-grid">
+                <div class="menu-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-coffee"></i>
+                        Horké nápoje
+                    </h3>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4>Espresso</h4>
+                                <span class="price">45 Kč</span>
+                            </div>
+                            <p>Klasické italské espresso z prémiových zrn</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4>Cappuccino</h4>
+                                <span class="price">65 Kč</span>
+                            </div>
+                            <p>Dokonalý poměr espresa a napěněného mléka</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4>Latte</h4>
+                                <span class="price">70 Kč</span>
+                            </div>
+                            <p>Jemné espresso s hedvábným mlékem a latte art</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4>Horká čokoláda</h4>
+                                <span class="price">55 Kč</span>
+                            </div>
+                            <p>Bohatá belgická čokoláda se šlehačkou</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-glass-whiskey"></i>
+                        Studené nápoje
+                    </h3>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4>Ledová káva</h4>
+                                <span class="price">75 Kč</span>
+                            </div>
+                            <p>Osvěžující espresso s ledem a studeným mlékem</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4>Frappé</h4>
+                                <span class="price">80 Kč</span>
+                            </div>
+                            <p>Ledový kávovinový nápoj se šlehačkou</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4>Domácí limonáda</h4>
+                                <span class="price">50 Kč</span>
+                            </div>
+                            <p>Čerstvá limonáda z citronů a limetky</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4>Čerstvé džusy</h4>
+                                <span class="price">60 Kč</span>
+                            </div>
+                            <p>Čerstvě vylisované z ovoce dle sezóny</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-cookie-bite"></i>
+                        Sladkosti & Zákusky
+                    </h3>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4>Domácí cheesecake</h4>
+                                <span class="price">85 Kč</span>
+                            </div>
+                            <p>Krémový tvarohový dort s ovocnou polevou</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4>Čokoládový brownie</h4>
+                                <span class="price">70 Kč</span>
+                            </div>
+                            <p>Šťavnatý čokoládový koláč s ořechy</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4>Croissant</h4>
+                                <span class="price">45 Kč</span>
+                            </div>
+                            <p>Čerstvý francouzský croissant s marmeládou</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4>Muffin</h4>
+                                <span class="price">55 Kč</span>
+                            </div>
+                            <p>Domácí muffin s borůvkami nebo čokoládou</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="o-nas" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="section-header">
+                        <h2 class="section-title">O nás</h2>
+                        <p class="section-subtitle">Příběh naší kavárny</p>
+                    </div>
+                    <div class="about-description">
+                        <p>Moment Cafe není jen obyčejná kavárna. Je to místo, kde se každý den snažíme vytvořit nezapomenutelné chvíle pro naše hosty. Nacházíme se v krásném prostředí Železného Brodu, kde tradice setkává s moderností.</p>
+                        
+                        <p>Naše filozofie je jednoduchá - věříme, že každý šálek kávy by měl být zážitkem. Proto pečlivě vybíráme nejkvalitnější zrna, používáme nejmodernější vybavení a každý nápoj připravujeme s láskou a pozorností k detailu.</p>
+                        
+                        <p>V našem útulném prostoru s moderním designem a příjemnou atmosférou si můžete užít chvilku klidu, setkat se s přáteli nebo si prostě vychutnat ten nejlepší šálek kávy ve městě.</p>
+                    </div>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-seedling"></i>
+                            <div>
+                                <h4>Prémiová kvalita</h4>
+                                <p>Používáme pouze nejlepší ingredience a čerstvě pražená zrna</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-heart"></i>
+                            <div>
+                                <h4>S láskou připraveno</h4>
+                                <p>Každý nápoj a pokrm připravujeme s osobním přístupem</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-home"></i>
+                            <div>
+                                <h4>Příjemná atmosféra</h4>
+                                <p>Moderní a útulné prostředí pro vaše nejlepší chvíle</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="attached_assets/df_1755121583426.jpg" alt="Interiér Moment Cafe" class="about-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="galerie" class="gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Galerie</h2>
+                <p class="section-subtitle">Nahlédněte do našeho světa</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item large">
+                    <img src="attached_assets/unnamed_1755121583426.jpg" alt="Exteriér Moment Cafe" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <p>Exteriér kavárny</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="attached_assets/df_1755121583426.jpg" alt="Interiér Moment Cafe" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <p>Interiér</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="attached_assets/sdfdsf_1755122296424.jpg" alt="Zákusky a dezerty Moment Cafe" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <p>Zákusky</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="kontakt" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Kontakt</h2>
+                <p class="section-subtitle">Navštivte nás nebo nám napište</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Adresa</h4>
+                            <p>nábř. Obránců míru 259<br>468 22 Železný Brod<br>Česká republika</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Telefon</h4>
+                            <p><a href="tel:+420607289291">607 289 291</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Otevírací doba</h4>
+                            <p>
+                                Pondělí - Pátek: 7:00 - 18:00<br>
+                                Sobota - Neděle: 8:00 - 17:00
+                            </p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-share-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Sociální sítě</h4>
+                            <div class="social-links">
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <form class="contact-form">
+                        <h3>Napište nám</h3>
+                        <div class="form-group">
+                            <label for="name">Jméno *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Telefon</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Zpráva *</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Váš vzkaz..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Odeslat zprávu
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="attached_assets/logo_moment_1755123950179.png" alt="MOMENT Cafe" class="footer-logo-img">
+                    <p>Místo, kde se čas zastavuje</p>
+                </div>
+                <div class="footer-info">
+                    <p>&copy; 2025 Moment Cafe. Všechna práva vyhrazena.</p>
+                    <p class="creator">web vytvořil Petr Movsesjan</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
