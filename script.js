@@ -133,10 +133,8 @@ document.querySelector('.contact-form').addEventListener('submit', function(e) {
         button.innerHTML = '<i class="fas fa-check"></i> Odesláno!';
         button.style.backgroundColor = '#10b981';
         
-        // Reset form
         this.reset();
         
-        // Reset button after 3 seconds
         setTimeout(() => {
             button.innerHTML = originalText;
             button.disabled = false;
@@ -145,10 +143,8 @@ document.querySelector('.contact-form').addEventListener('submit', function(e) {
     }, 2000);
 });
 
-// Gallery Item Click Handler
 document.querySelectorAll('.gallery-item').forEach(item => {
     item.addEventListener('click', function() {
-        // Add click animation
         this.style.transform = 'scale(0.95)';
         
         setTimeout(() => {
@@ -160,18 +156,7 @@ document.querySelectorAll('.gallery-item').forEach(item => {
     });
 });
 
-// Parallax Effect for Hero Section
-window.addEventListener('scroll', function() {
-    const scrolled = window.pageYOffset;
-    const hero = document.querySelector('.hero-background');
-    const rate = scrolled * -0.5;
-    
-    if (hero) {
-        hero.style.transform = `translateY(${rate}px)`;
-    }
-});
 
-// Menu Category Hover Effects - Removed aggressive animations
 document.querySelectorAll('.menu-category').forEach(category => {
     category.addEventListener('mouseenter', function() {
         this.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.1)';
@@ -182,11 +167,9 @@ document.querySelectorAll('.menu-category').forEach(category => {
     });
 });
 
-// Add loading animation to page
 window.addEventListener('load', function() {
     document.body.classList.add('loaded');
     
-    // Trigger initial animations
     setTimeout(() => {
         document.querySelectorAll('.hero-content > *').forEach((el, index) => {
             setTimeout(() => {
@@ -196,8 +179,6 @@ window.addEventListener('load', function() {
         });
     }, 100);
 });
-
-// Smooth reveal animations for sections
 const revealElements = document.querySelectorAll('.section-header, .about-text, .contact-info');
 
 const revealObserver = new IntersectionObserver(function(entries) {
@@ -218,13 +199,11 @@ revealElements.forEach(el => {
     revealObserver.observe(el);
 });
 
-// Phone number click tracking
 document.querySelector('a[href^="tel:"]').addEventListener('click', function() {
     console.log('Phone number clicked');
     // Here you could add analytics tracking
 });
 
-// Add visual feedback for form inputs
 document.querySelectorAll('.form-group input, .form-group textarea').forEach(input => {
     input.addEventListener('focus', function() {
         this.parentElement.classList.add('focused');
@@ -245,10 +224,8 @@ document.querySelectorAll('.form-group input, .form-group textarea').forEach(inp
     });
 });
 
-// Keyboard navigation support
 document.addEventListener('keydown', function(e) {
     if (e.key === 'Escape') {
-        // Close mobile menu if open
         const hamburger = document.querySelector('.hamburger');
         const navMenu = document.querySelector('.nav-menu');
         
@@ -259,7 +236,6 @@ document.addEventListener('keydown', function(e) {
     }
 });
 
-// Add CSS for additional animations
 const additionalStyles = `
     .animate-in {
         animation: slideInUp 0.6s ease forwards;
@@ -303,7 +279,6 @@ const additionalStyles = `
     }
 `;
 
-// Inject additional styles
 const styleSheet = document.createElement('style');
 styleSheet.textContent = additionalStyles;
 document.head.appendChild(styleSheet);
